@@ -1,3 +1,6 @@
 body {
-    background-color: lightGray;
+    font-family: 'Roboto', serif;
+    background-color:rgba(231, 231, 231,0.5);
+    color: midnightblue;
+    padding: 30px 120px 30px 120px;
 }

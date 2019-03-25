@@ -1,6 +1,96 @@
 .container {
-    width: 80%;
-    margin: 50px auto 0 auto;
     background-color: white;
-    border: 2px solid green;
+    padding: 2rem;
+    box-sizing: border-box;
 }
+
+.heading {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    background-color: rgba(231, 231, 231,0.5);
+    padding: 15px;
+    font-size: 2rem;
+    border-bottom: 3px solid midnightblue;
+    margin-bottom: 2rem;
+}
+
+.heading span {
+    margin-left: 1.5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 30%;
+    border-right: 3px solid midnightblue;
+}
+
+form {
+    box-sizing: border-box;
+}
+
+.main {
+    width: 70%;
+    padding-left: 2rem;
+    box-sizing: border-box;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    box-sizing: border-box;
+}
+
+section:first-child {
+    padding-top: 0;
+}
+
+label {
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    height: 34px;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.dateTimeSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid green;
+}
+
+.dateTimeSection div {
+    width: 30%;
+    box-sizing: border-box;
+    border: px solid blue;
+}
+
+.iconInput input{
+    display: inline;
+}
+
+.iconInput > * {
+    display: inline;
+} */

@@ -1,18 +1,90 @@
 
 <div class="container">
 
-<div style="text-align:center">
-  <fa-icon [icon]="faCoffee"></fa-icon>
-</div>
+    <div class="heading">
+        <fa-icon [icon]="['far', 'calendar-plus']"></fa-icon>
+        <span>Add an Event</span>
+    </div>
+
+    <div class="content">
+
+        <div class="sidebar">
+            Hello
+        </div>
+
+        <div class="main">
+
+            <form (ngSubmit)="submit(f)" #f="ngForm">
+
+                <label> Event Title </label>
+                <input type="text" name="title" ngModel/>
+
+                <label> Date</label>
+                <input type="date" name="date" ngModel/>
+
+                <label> Start Time</label>
+                <input type="time"  name="startTime" ngModel/>
+
+                <label> End time </label>
+                <input type="time"  name="endTime" ngModel/>
+
+                <label> Location - Autocomplete</label>
+                <input type="text" />
+
+                <label> Venue Name</label>
+                <input type="text"  name="venueName" ngModel/>
+
+                <label> Address </label>
+                <input type="text"  name="address" ngModel/>
+
+                <label> Unit </label>
+                <input type="text" name="unit" ngModel/>
+
+                <label> City </label>
+                <input type="text"  name="city" ngModel/>
+
+                <label> Province </label>
+                <input type="text" name="province" ngModel/>
+
+                <label> Postal </label>
+                <input type="text" name="postal" ngModel/>
+
+                <label> Show Map </label>
+                <input type="checkbox" name="map" ngModel>
+
+                <div> Map </div>
+        
+                <button> Reset Location </button>
+
+                <label> Description </label>
+                <textarea name="description" ngModel> Description </textarea>
+
+                <label> Website </label>
+                <input type="text" name="Website" ngModel/> 
+
+                <label> Cost </label>
+                <input type="text" name="cost" ngModel/> 
+
+                <label> Ticket Sale / Registeration URL</label>
+                <input type="text" name="url" ngModel/> 
+
+                <label> Organizer Name</label>
+                <input type="text"/> 
+
+                <label> Organizer Email</label>
+                <input type="text"/> 
+
+                <button>Submit</button>
+
+            </form>
+            
+        </div>
+
+    </div>
 
 
-    <form>
-
-        <label> Event Title </label>
-        <input type="text"/>
 
 
-    </form>
 
 </div>
 

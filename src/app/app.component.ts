@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { NgForm } from '@angular/forms';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,5 +8,9 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'eventForm';
-  faCoffee = faCoffee;
+
+  submit(form: NgForm) {
+    console.log('hello');
+    console.log(form);
+  }
 }
